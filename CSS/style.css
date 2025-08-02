@@ -1,0 +1,251 @@
+@font-face{
+  font-family: 'Pixelify';
+  src: url('../fonts/Pixelify_Sans/static/PixelifySans-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'Monserrat';
+  src: url('../fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'Intel';
+  src: url('../fonts/IntelOneMono-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face{
+  font-family: 'FarmHouse';
+  src: url('../fonts/Winter\ Farmhouse.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root{
+  --font-style1: Inter;
+  --font-style1: Verdana, sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: var(--font-style1);
+}
+
+.navbar{
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+
+.logo{
+  display: flex;
+  flex-direction: column;
+}
+
+.logo div{
+  display: flex;
+  align-items: center;
+  gap: 0;
+  font-family: 'FarmHouse';
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.logo div img{
+  width: 30px;
+}
+
+.nav-links{
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links a{
+  text-decoration: none;
+  color: #6931a1;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 5px;
+  transition: 400ms all ease;
+
+}
+
+.nav-links a:hover{
+  border-bottom: 2px solid #6931a1;              
+}
+
+.nav-links .signup{
+  background: #6931a1;
+  padding: 15px 36px;
+  border-radius: 3rem;
+  color: white;
+  font-size: 16px;
+  font-family: 'Monserrat';
+  font-weight: 650;
+}
+/* End of Nav */
+
+section.hero{
+  width: 90%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-side{
+  max-width: 42rem;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.one{
+  position: relative;
+  top: 5px;
+}
+
+.money{
+  width: fit-content;
+  font-size: 3.5rem;
+  background: #ffc4c9;
+  color: #372121;
+  padding: 20px 30px;
+  border: 3px solid #5E3030;
+  box-shadow: 0px 10px 20px 5px rgba(106, 54, 54, 0.3);
+  border-radius: 8rem;
+  position: relative;
+  transform: rotate(5deg);
+}
+
+.one img{
+  position: absolute;
+  bottom: 80px;
+  right: 70px;
+  width: 90px;
+  z-index: 1;
+  animation: rotate 2500ms ease-out 500ms infinite alternate-reverse;
+}
+
+@keyframes rotate{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(200deg);
+  }
+}
+
+.two{
+  position: relative;
+  display: flex;
+}
+
+.in{
+  background: #ff4f59;
+  color: white;
+  width: fit-content;
+  padding: 1rem 2.5rem;
+  position: relative;
+  border: 3px solid #5E3030;
+  box-shadow: 0px 10px 20px 5px rgba(106, 54, 54, 0.3);
+  border-radius: 8rem;
+  font-size: 4rem;
+  transform: rotate(-3.88deg);
+}
+
+.two img{
+  position: absolute;
+  z-index: 1;
+  left: -40px;
+  bottom: 40px;
+  width: 70px;
+}
+
+.three{
+  position: relative;
+  display: flex;
+  bottom: 3px;
+}
+
+.heart{
+  width: fit-content;
+  font-size: 3.5rem;
+  background: #ffc4c9;
+  color: #372121;
+  padding: 20px 40px;
+  border: 3px solid #5E3030;
+  box-shadow: 0px 10px 20px 5px rgba(106, 54, 54, 0.3);
+  border-radius: 8rem;
+  position: relative;
+}
+
+.three img{
+  position: absolute;
+  right: 3px;
+  bottom: -20px;
+  width: 90px;
+  animation: spin 3000ms ease 2000ms infinite normal;
+}
+
+@keyframes spin{
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(-100deg);
+  }
+}
+
+.left-side .paragraph{
+  font-size: 20px;
+  color: #1b1c20;
+  font-weight: 100;
+}
+
+.left-side .qr-code{
+  border: 1px dashed #1b1c20;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 28px 15px;
+  gap: 10px;
+  font-weight: 100;
+}
+
+.text-icon{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #1b1c20;
+}
+
+.icons .icon{
+  font-size: 20px;
+}
+
+.icons .icon:nth-child(odd){
+  font-size: 28px;
+}
+
+.qr-code img{
+  width: 70px;
+}
+
+
+
