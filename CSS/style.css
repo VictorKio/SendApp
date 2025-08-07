@@ -44,13 +44,20 @@
   font-family: var(--font-style1);
 }
 
+body{
+  overflow-x: hidden;
+  background-color: #fff9f2;
+}
+
 .navbar{
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   padding: 20px;
   align-items: center;
+  z-index: 1;
+  position: relative;
 }
 
 .logo{
@@ -117,7 +124,8 @@ section.hero{
 
 .one{
   position: relative;
-  top: 5px;
+  top: 9px;
+  z-index: 1;
 }
 
 .money{
@@ -125,7 +133,7 @@ section.hero{
   font-size: 3.5rem;
   background: #ffc4c9;
   color: #372121;
-  padding: 20px 30px;
+  padding: 20px 25px;
   border: 3px solid #5E3030;
   box-shadow: 0px 10px 20px 5px rgba(106, 54, 54, 0.3);
   border-radius: 8rem;
@@ -136,7 +144,7 @@ section.hero{
 .one img{
   position: absolute;
   bottom: 80px;
-  right: 70px;
+  left: 200px;
   width: 90px;
   z-index: 1;
   animation: rotate 2500ms ease-out 500ms infinite alternate-reverse;
@@ -154,13 +162,14 @@ section.hero{
 .two{
   position: relative;
   display: flex;
+  left: 50px;
 }
 
 .in{
   background: #ff4f59;
   color: white;
   width: fit-content;
-  padding: 1rem 2.5rem;
+  padding: .8rem 1.5rem;
   position: relative;
   border: 3px solid #5E3030;
   box-shadow: 0px 10px 20px 5px rgba(106, 54, 54, 0.3);
@@ -197,8 +206,8 @@ section.hero{
 
 .three img{
   position: absolute;
-  right: 3px;
-  bottom: -20px;
+  right: 270px;
+  bottom: -30px;
   width: 90px;
   animation: spin 3000ms ease 2000ms infinite normal;
 }
@@ -216,6 +225,8 @@ section.hero{
   font-size: 20px;
   color: #1b1c20;
   font-weight: 100;
+  width: 70%;
+  line-height: 25px;
 }
 
 .left-side .qr-code{
@@ -224,8 +235,9 @@ section.hero{
   align-items: center;
   border-radius: 10px;
   padding: 28px 15px;
-  gap: 10px;
+  gap: 20px;
   font-weight: 100;
+  width: 500px;
 }
 
 .text-icon{
@@ -233,10 +245,20 @@ section.hero{
   flex-direction: column;
   justify-content: space-between;
   color: #1b1c20;
+  width: fit-content;
+}
+
+.text-icon .text{
+  width: 70%;
+}
+
+.icons{
+  width: fit-content;
 }
 
 .icons .icon{
   font-size: 20px;
+  text-align: left;
 }
 
 .icons .icon:nth-child(odd){
@@ -246,6 +268,52 @@ section.hero{
 .qr-code img{
   width: 70px;
 }
+/* End of Left side */
+.right-side{
+  /* position: relative; */
+  overflow-x: hidden;
+}
+
+.brown-hand{
+  position: absolute;
+  top: -310px;
+  right: -330px;
+  width: 600px;
+}
+
+.brown-thumb{
+  position: absolute;
+  top: -210px;
+  right: -160px;
+  width: 500px;
+  animation: left-right 3000ms ease 2000ms infinite normal;
+}
+
+@keyframes left-right {
+  10%{
+    transform: rotate(-9deg);
+  }
+  50%{
+    transform: rotate(15deg);
+  }
+}
+
+.red-starburst{
+  position: absolute;
+  top: 300px;
+  right: 400px;
+  width: 250px;
+}
+
+.conversion{
+  background-color: #fff9f2;
+  box-shadow: 0px 6px 20px 5px rgba(0, 0, 0, .25);
+  min-width: 42rem;
+  min-height: 66rem;
+  z-index: 1;
+}
+
+
 
 
 
